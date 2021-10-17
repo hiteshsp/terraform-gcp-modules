@@ -3,8 +3,6 @@ variable "project" {
   description = "GCP Project ID"
   default     = ""
 }
-
-
 variable "service_account" {
   type        = string
   description = "GCP Service Account"
@@ -12,9 +10,9 @@ variable "service_account" {
 }
 
 variable "cluster_name" {
-    description = "GKE Cluster Name"
-    type = string
-    default = ""
+  description = "GKE Cluster Name"
+  type        = string
+  default     = ""
 }
 
 variable "description" {
@@ -27,9 +25,9 @@ variable "description" {
 variable "oauth_scopes" {
   type        = list(string)
   description = "List of OAuth Scopes"
-  default     = [
-      "https://www.googleapis.com/auth/cloud-platform"
-    ]
+  default = [
+    "https://www.googleapis.com/auth/cloud-platform"
+  ]
 }
 
 variable "initial_node_count" {
@@ -70,7 +68,7 @@ variable "is_node_preemptibile" {
 
 
 variable "location" {
-    description = "GCP Location"
-    type = string
-    default = "asia-east1-c"
+  description = "GCP Location"
+  type        = string
+  default     = "asia-east1-c"
 }
